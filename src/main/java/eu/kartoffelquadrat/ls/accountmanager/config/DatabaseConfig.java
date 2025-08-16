@@ -17,7 +17,7 @@ import java.security.SecureRandom;
  * @author Maximilian Schiedermeier, August 2020
  */
 @Configuration
-@Profile(""!guest")
+@Profile("!guest")
 public class DatabaseConfig {
 
     @Autowired
