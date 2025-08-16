@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.context.annotation.Profile;
 
 import javax.sql.DataSource;
 import java.security.SecureRandom;
@@ -16,6 +17,7 @@ import java.security.SecureRandom;
  * @author Maximilian Schiedermeier, August 2020
  */
 @Configuration
+@Profile(""!guest")
 public class DatabaseConfig {
 
     @Autowired
