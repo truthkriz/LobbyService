@@ -31,6 +31,9 @@ import java.util.Map.Entry;
  *
  * @author Maximilian Schiedermeier, August 2020
  */
+import org.springframework.context.annotation.Profile;
+
+@Profile("!guest")   // <-- controller lama hanya aktif di non-guest
 @RestController
 public class SessionController {
 
